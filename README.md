@@ -2,23 +2,23 @@
 
 # AgendaX: staff scheduling for restaurants
 
-A mobile app for planning shifts, collecting availability, tracking attendance and reporting hours in restaurants. It is used by managers, chefs and staff in French, English and Chinese.
+A mobile app for planning shifts, collecting availability, tracking attendance and reporting hours in restaurants. I built it on a freelance assignment for a restaurant group in Paris and Lyon. The interface is available in French, English and Chinese.
 
 > **Case study page.** AgendaX is a client project and its source code is private. This page covers the product, my role and the architecture. I can walk through the code during an interview.
 
 | | |
 |---|---|
-| **Period** | March – November 2026 |
-| **Status** | Pilot in a restaurant with 20–30 employees. Version 1.1.20 shipped on 31 October 2026 |
+| **Period** | March 2026 – present |
+| **Status** | About 20 employees are testing the app at a pilot location. |
 | **Team** | Me (product and front-end) and one back-end developer |
 | **Platforms** | iOS, Android, web (H5) |
 
 ## My role
 
-- **Requirements.** I collected the business rules with the restaurant owner: who can work where, opening hours, staffing needs per shift, leave and cover rules. I turned them into functional specifications, acceptance criteria and Figma mockups.
+- **Requirements.** I negotiated the fee and scope with the group owner and designed the user flows around how teams organise shifts, cover and leave.
 - **Scheduling logic.** I designed the constraint-based schedule generation together with the back-end developer, who built it in Spring Boot. It takes into account availability, preferences, hour caps, work-zone qualifications and conflict detection.
 - **Front-end.** I built the TypeScript app (uni-app and Vue 3), including the trilingual interface. The OpenAI API handles multilingual translation.
-- **Adoption.** I collected feedback from the pilot and turned it into batches of fixes. I also wrote the user guide and recorded the demo videos.
+- **Adoption.** After feedback from the pilot restaurant’s owner, I moved secondary functions into submenus and replaced several options with defaults. Preparing a schedule went from 5 minutes to 30 seconds. I also wrote the user guide and recorded the demo videos.
 
 ## What it does
 
@@ -72,4 +72,4 @@ Real use in the restaurant changed the product several times:
 
 ## Stack
 
-`TypeScript` `Vue 3` `uni-app` `Spring Boot` `PostgreSQL` `Redis` `Docker` `Railway` `OpenAI API` `Playwright` `Figma`
+`TypeScript` `Vue 3` `uni-app` `Spring Boot` `PostgreSQL` `Redis` `Docker` `Railway` `OpenAI API` `Playwright`
